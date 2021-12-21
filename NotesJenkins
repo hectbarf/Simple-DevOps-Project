@@ -25,6 +25,13 @@ now there is github
 can generate access token
 github.com/settings/tokens
 
+Install Maven according with instruction inside Jenkins
 MAVEN PLUGIN
+Manage Jenkins / Manage Plugins
+MAven integration
+Maven Invoker
+Manage Jenkins/global tool configuration
+now there is maven 
+
 
 
