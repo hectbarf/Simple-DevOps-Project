@@ -12,3 +12,19 @@ PATH=$PATH:$HOME/bin:$JAVA_HOME=
 follow doc install jenkins
 
 At the jenkins app, do echo $JAVA_HOME and configure it at jenkins GlobalToolConfiguration JDK/JAVAHome
+========================
+PLUGIN INSTALLATION
+
+GITHUB PLUGIN
+Manage Jenkins / Manage Plugins
+For example plugins:
+github
+
+Manage Jenkins/global tool configuration
+now there is github
+can generate access token
+github.com/settings/tokens
+
+MAVEN PLUGIN
+
+
