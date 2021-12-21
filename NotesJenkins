@@ -1,0 +1,14 @@
+JAVA INSTALL A IN EC2
+java -version
+yum remove java-1.7.0*
+yum install java-1.8*
+
+find /usr/lib/jvm/java-1.8* | head -n 3
+cd~
+vi ~/.bash_profile
+JAVA_HOME=/usr/lib/jvm/java-1.8
+PATH=$PATH:$HOME/bin:$JAVA_HOME=
+
+follow doc install jenkins
+
+At the jenkins app, do echo $JAVA_HOME and configure it at jenkins GlobalToolConfiguration JDK/JAVAHome
