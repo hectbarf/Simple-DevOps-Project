@@ -33,5 +33,10 @@ Maven Invoker
 Manage Jenkins/global tool configuration
 now there is maven 
 
+=========================
+INTEGRATE JENKINS WITH TOMCAT
+
+Install plugin Deploy to container
+
 
 
