@@ -38,5 +38,35 @@ INTEGRATE JENKINS WITH TOMCAT
 
 Install plugin Deploy to container
 
+----------------------------
+DOCKER IN JENKINS
+Install plugin publish over ssh
+create user docker user in docker machine
+useradd dockeradmin
+passwd dockeradmin
+cat /etc/group
+usermod -aG docker dockeradmin
+id dockeradmin
+
+Manage jenkins/configure system
+over publish ssh / add ssh Server put hostname ip address, with user and advance the password
+enable autentication in ec2 server:
+vi /etc/ssh/sshd_config
+modify PasswordAuthentication to yes
+service sshd reload
+send build artifact over ssh
+
+---------------------------
+CREATE SIMPLE DOCKER FILE
+
+FROM tomcat:latest
+
+COPY ./webapp.war /usr/local/tomcat/webapps
+wq!
+docker ps
+docker build --t devops-project .
+docker images
+docker run -d --name devops-container -p 8080:8080 devops-project
+
 
 
